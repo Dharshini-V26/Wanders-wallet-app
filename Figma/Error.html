@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdrawal Failed</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .container {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .error-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .message {
+            font-size: 14px;
+            margin-bottom: 30px;
+            color: #bbbbbb;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 120px;
+        }
+
+        .btn-retry {
+            background-color: white;
+            color: black;
+        }
+
+        .btn-history {
+            background-color: #e4f200;
+            color: black;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Error Image -->
+    <img src="error_image.png" alt="Error" class="error-image">
+    
+    <!-- Title -->
+    <div class="title">Withdrawal Failed</div>
+    
+    <!-- Message -->
+    <div class="message">
+        There was a problem processing this payment. Please double-check the submitted details and try again.
+    </div>
+    
+    <!-- Buttons -->
+    <div class="button-container">
+        <button class="btn btn-retry">Retry</button>
+        <button class="btn btn-history">View History</button>
+    </div>
+    <div class="button-container">
+        <button class="btn btn-retry" onclick="window.location.href='Loan.html'">Request Loan</button>
+        <button class="btn btn-history" onclick="window.location.href='Userprofile.html'">User Profile</button>
+        <button class="btn btn-retry" onclick="window.location.href='Registration.html'">Register</button>
+    </div>
+    
+</div>
+
+</body>
+</html>
