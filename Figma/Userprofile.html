@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+      color: white;
+    }
+
+    .profile-container {
+      width: 600px;
+      padding: 20px;
+      background-color: #000;
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-header img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .profile-header h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .wallet-balance {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .wallet-balance label {
+      background-color: #ffcccc;
+      color: black;
+      padding: 10px;
+      border-radius: 5px 0 0 5px;
+      width: 70%;
+    }
+
+    .wallet-balance span {
+      background-color: #ffcccc;
+      color: black;
+      padding: 10px;
+      border-radius: 0 5px 5px 0;
+      margin-left: -5px;
+      width: 30%;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      background-color: #d3d3d3;
+      color: black;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-header">
+      <img src="https://via.placeholder.com/50" alt="User Profile Picture">
+      <h2>User Profile</h2>
+    </div>
+
+    <div class="wallet-balance">
+      <label>Wallet Balance</label>
+      <span>$30</span>
+    </div>
+
+    <div class="form-group">
+      <label for="active-loan">Active loan</label>
+      <select id="active-loan">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <!-- Add more options here -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="quick-action-plans">Quick Action Plans</label>
+      <select id="quick-action-plans">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <!-- Add more options here -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="upcoming-bills">Upcoming bills</label>
+      <select id="upcoming-bills">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <!-- Add more options here -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="financial-insights">Financial Insights</label>
+      <select id="financial-insights">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <!-- Add more options here -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="transaction-history">Transaction History</label>
+      <select id="transaction-history">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <!-- Add more options here -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="travel-specific-features">Travel Specific Features</label>
+      <select id="travel-specific-features">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <!-- Add more options here -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="referral-program">Referral Program Section</label>
+      <select id="referral-program">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <!-- Add more options here -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="promotions-offers">Promotion and Offers</label>
+      <select id="promotions-offers">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <!-- Add more options here -->
+      </select>
+      <div class="form-group">
+        <button class="withdraw-btn" onclick="window.location.href='Loan.html'">Request Loan</button>
+        <button class="withdraw-btn" onclick="window.location.href='Registration.html'">Register</button>
+        <button class="withdraw-btn" onclick="window.location.href='Error.html'">Check Errors</button>
+    </div>
+    
+    </div>
+  </div>
+</body>
+</html>

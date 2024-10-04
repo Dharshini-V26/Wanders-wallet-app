@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Request Form</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .title {
+            background-color: #00e0e0;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        select, input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .optional {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .interest {
+            margin: 20px 0;
+        }
+
+        .withdraw-btn {
+            background-color: #bf4bdb;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .withdraw-btn:hover {
+            background-color: #a140ba;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="title">Request loan</div>
+    
+    <label for="loan-amount">Loan amount input</label>
+    <select id="loan-amount" name="loan-amount">
+        <option value="10">$10</option>
+        <option value="25">$25</option>
+        <option value="35">$35</option>
+        <option value="40">$40</option>
+        <option value="other">Other</option>
+    </select>
+    <small>(up to $50)</small>
+    
+    <label for="repayment-period">Repayment Period</label>
+    <select id="repayment-period" name="repayment-period">
+        <option value="weekly">Weekly</option>
+        <option value="monthly">Monthly</option>
+        <!-- Add more options as needed -->
+    </select>
+    
+    <label for="purpose">Purpose of loan</label>
+    <input type="text" id="purpose" name="purpose" placeholder="(Optional)">
+    
+    <div class="interest">Interest: 2%</div>
+    
+    <button class="withdraw-btn">WITHDRAW AMOUNT</button>
+    <button class="withdraw-btn" onclick="window.location.href='Userprofile.html'">Go to Profile</button>
+<br>
+<button class="withdraw-btn" onclick="window.location.href='Registration.html'">Register</button>
+<br>
+<button class="withdraw-btn" onclick="window.location.href='Error.html'">Check Errors</button>
+
+</div>
+
+</body>
+</html>

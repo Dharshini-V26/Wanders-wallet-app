@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-container {
+      width: 350px;
+      background-color: #000;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .login-container img {
+      width: 50px;
+    }
+
+    .logo {
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .continue-google {
+      display: inline-block;
+      background-color: white;
+      color: black;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .or-divider {
+      color: white;
+      margin: 20px 0;
+      font-size: 16px;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      background-color: #d3d3d3;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #00d2ff;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-button:hover {
+      background-color: #00a0cc;
+    }
+
+    .reset-password, .create-account {
+      color: #00d2ff;
+      display: block;
+      margin-top: 10px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .create-account {
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <img src="logo.png" alt="Logo"> <!-- Replace with your logo image -->
+    <div class="logo">Wanders</div>
+    
+    <button class="continue-google">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="Google Logo" style="width:20px; vertical-align:middle; margin-right:10px;">
+      Continue with Google
+    </button>
+
+    <div class="or-divider">or</div>
+
+    <form>
+      <input type="email" placeholder="EMAIL" class="form-input" required>
+      <input type="password" placeholder="PASSWORD" class="form-input" required>
+      <button type="submit" class="login-button">Log in</button>
+    </form>
+
+    <a href="#" class="reset-password">Reset password</a>
+    <a href="#" class="create-account">No account? Create one</a>
+  </div>
+</body>
+</html>
